@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.json"> 
+  <title>Transport&reg;</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="Transport.css">
+</head>
+<header>
+    <div id="d1">
+  <section><a href="index.html"><img id="logo" src="images\logo.webp" title="Lanka Tourism"></a></section>
+  <section><span id="t">Lanka Attraction</span></section>
+    <section class=>Follow Us<br>
+      <a href="www.instagram.com"><img id="instaimg" src="images\contactus\insta.webp" title="Lanka Tourism"></a>
+      <a href="www.facebook.com"><img id="FBimg" src="images\contactus\fb.webp" title="Lanka Tourism" ></a></section>
+    </div>
+  </header>
+
+  <body>
+    <main> 
+      <nav class="mainnav">
+          <ul>
+              <li><a href="index.html"><i class="fa fa-home"></i><span class="navtext">Home</span></a></li>
+              <li><a href="Accomadations.html"><i class="fa fa-building"></i><span class="navtext">Accomadations</span></a></li>
+              <li><a href="Attractions.html"><i class='fab fa-deskpro'></i><span class="navtext">Attractions</span></a></li>
+              <li><a href="Contact Us.html"><i class='fas fa-book'></i><span class="navtext">Contact</span></a></li>
+          </ul>
+        </nav>
+      <br>
+      <section class="s1">
+        <input id="search" type="text" name="search">&emsp;<button type="submit" id="submit"><i class="fa fa-search"></i></button>
+        </section>
+        <button id="top" title="Go to top">Top</button>
+        <br>
+      <div>
+        <div>
+          <section>
+            <form method="GET">
+              <fieldset>
+                <legend>Customer Details</legend>
+                <p>
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                  <label for="number">Phone Number:</label>
+                  <input type="number" id="number" name="number" required>
+                </p>
+                <label for="mail">Email:</label>
+                  <input type="text" id="mail" name="mail">
+              </fieldset>
+            </form>
+          </section>
+          <section>
+              <form method="GET">
+                <fieldset>
+                  <legend>Vehicle Type</legend>
+              <p>Tuk-Tuk : <input type="radio" name="vehicle" id="tuk" value="tuk"></p> 
+              <p> Mini-Car : <input type="radio" name="vehicle" id="mc" value="mc"></p>
+              <p>Luxury-Car : <input type="radio" name="vehicle" id="lc" value="lc"></p> 
+              <p>Luxury-Van : <input type="radio" name="vehicle" id="lv" value="lv"></p> 
+              <p>Luxury-Bus : <input type="radio" name="vehicle" id="lb" value="lb"></p> 
+            </fieldset>
+            </form>
+          </section>
+          <section>
+            <form method="GET">
+              <fieldset>
+            <legend>Fuel Efficiency :</legend>
+            <p> High : <input type="radio" name="fuel" id="high" value="high"></p>
+            <p> Medium : <input type="radio" name="fuel" id="medium" value="medium" checked></p>
+            <p> Low : <input type="radio" name="fuel" id="low" value="low"></p> 
+          </fieldset>
+        </form>
+          </section>
+          <section>
+              <form method="GET">
+            <fieldset>
+              <legend>Distance(In KMs) :</legend>
+              <p><input type="number" name="distance" id="km"  min="0" required></p>
+            </fieldset>
+            </form>
+          </section>
+          <section>
+            <form method="GET">
+              <fieldset>
+                <legend>Stay :</legend>
+                <p>One Way : <input type="radio" name="stay" id="oneway" value="oneway"></p>
+                <p>Two Ways : <input type="radio" name="stay" id="twoway" value="twoway"></p> 
+                <p> Overnight : <input type="radio" name="stay" id="overnight" value="overnight"></p>
+              </fieldset>
+            </form>
+          </section>
+          <section>
+            <form method="GET">
+              <fieldset>
+                <legend>Starting Point(Address) :</legend>
+                <p><input type="text" name="Address" id="address" required></p>
+              </fieldset>
+              </form>
+          </section>
+        </div>
+      <div>
+        <p>Please press Check Current Cost before pressing add to order or add to fav everytime.</p>
+      <section><button id="order">Check Current Cost</button></section>
+      <section><button id="aorder">Add to Order</button></section>
+      <section><button id="reserve">Reserve</button></section>
+      <section><button id="aFav">Add To Favourites</button>&emsp;<button id="oFav">Order Favourite</button></section>
+      <section><button id="cl">Check Loyalty</button></section>
+    </div>
+    <fieldset><legend>Customer Details</legend> </h4>
+    <p id="cname"></p>
+    <p id="cnumber"></p>
+    <p id="cmail"></p>
+    </fieldset> 
+    <fieldset><legend>Current Taxi</legend>
+    <p id="ct"></p></fieldset>
+    <fieldset><legend>Current Taxi Cost</legend>
+    <p id="ctc">0</p></fieldset>
+    <fieldset><legend>Overall Order</legend>
+    <p id="oo"></p>
+    </fieldset>
+    <fieldset><legend>Overall Order Cost</legend>
+    <p id="oco">0</p></fieldset>
+    <fieldset><legend>Loyalty Points</legend>
+    <p id="lp"></p>
+    </fieldset>
+    </div>
+    <footer>
+        <hr size="3" noshade color="#000000">
+        <section class="s12">
+          For offers and deals : <br>
+          <input type="email" id="email" name="email"><button id="button">Submit</button>                 
+        </section><br>
+        <div id="d6">
+          <section class="s13">
+              <button type="button" class="collapsible">Sri Lanka Information</button>
+              <section class="content">
+              <ul>
+                <li><a href="#">Sri Lanka Advice</a></li>
+                <li><a href="#">Sri Lanka Climate</a></li>
+                <li><a href="#">Sri Lanka Health and Vaccinations</a></li>
+                <li><a href="#">Sri Lanka Visas</a></li>
+              </ul>
+          </section><br>
+        </section>
+          <section class="s14">
+            <button type="button" class="collapsible">Emergency Numbers of Sri Lanka</button>
+            <section class="content">
+            <ul>
+            <li>Police Emergency Hotline	118 / 119
+            <li>Ambulance / Fire & rescue	110
+            <li> Accident Service-General Hospital-Colombo	011-2691111
+            <li>Tourist Police	011-2421052
+            <li> Police Emergency	011-2433333
+            <li> Government Information Center	1919
+            <li> Report Crimes	011-2691500
+            <li>Emergency Police Mobile Squad	011-5717171
+            <li>Fire & Ambulance Service	011-2422222
+          </ul>
+            </section>
+          </section>
+            <section class="s15">
+                  <ul>
+                    <br>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy and Terms</a></li>
+                    <li><a href="#">User Agreement</a></li>
+                  </ul>
+            </section>
+        </div>
+        <div id="d3">
+          <section class="s13">
+              Sri Lanka Information
+              <ul>
+                <li><a href="#">Sri Lanka Advice</a></li>
+                <li><a href="#">Sri Lanka Climate</a></li>
+                <li><a href="#">Sri Lanka Health and Vaccinations</a></li>
+                <li><a href="#">Sri Lanka Visas</a></li>
+              </ul>
+          </section><br>
+        </section>
+          <section class="s14">
+            Emergency Numbers of Sri Lanka
+            <ul>
+            <li>Police Emergency Hotline	118 / 119
+            <li>Ambulance / Fire & rescue	110
+            <li> Accident Service-General Hospital-Colombo	011-2691111
+            <li>Tourist Police	011-2421052
+            <li> Police Emergency	011-2433333
+            <li> Government Information Center	1919
+            <li> Report Crimes	011-2691500
+            <li>Emergency Police Mobile Squad	011-5717171
+            <li>Fire & Ambulance Service	011-2422222
+          </ul>
+            </section>
+          </section>
+            <section class="s15">
+                  <ul>
+                    <br>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy and Terms</a></li>
+                    <li><a href="#">User Agreement</a></li>
+                  </ul>
+            </section>
+        </div>
+        <div>
+          Name : Madushan <br>
+          Number : 0763322357 <br>
+          mail : cb008616@students.apiit.lk
+        </div>
+      </footer>
+</main>
+<script src="Transport.js"></script>
+</body>
+</html>
+  

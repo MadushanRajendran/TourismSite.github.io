@@ -1,0 +1,300 @@
+#logo{
+    height: 50px;
+    width: 	50px;
+   vertical-align: middle;
+}
+
+#FBimg{
+    height: auto;
+    width: 30px;
+    vertical-align: text-top;
+}
+#instaimg{
+    height: auto;
+    width: 30px;
+    vertical-align: text-top;
+}
+
+.mainnav {
+    position: sticky;
+    top: auto;
+    background-color: silver;
+}
+
+
+.mainnav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;  
+}
+.mainnav li {
+    width: 100%;
+}
+
+
+.mainnav a {
+    
+    max-height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    display: block;
+    color: black;
+   
+}
+
+.navtext {
+    padding-left: 1rem;
+}
+
+
+header,footer{
+    background-color: silver;
+}
+
+
+#d1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+
+#dhalada{
+    height: 20%;
+    width: 90%;
+}
+
+#lotus{
+    height: 30%;
+    width: 	100%;
+}
+
+#gallefort{
+    height: 27%;
+    width: 	90%;
+}
+
+#nallur{
+    height: 30%;
+    width: 100%;
+}
+
+#sigiriya{
+    height: 15%;
+    width: 	90%;
+}
+
+#yala{
+    height: 17%;
+    width: 	80%;
+}
+
+#lotus{
+    height: 45%;
+    width: 	100%;
+}
+
+table {
+    border-bottom: 1px solid black;
+    text-align: center;
+    border-spacing: 15px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; 
+  }
+
+  .content a{
+      color: black;
+  }
+
+  .f1{
+    text-align: center;
+}
+
+.s12{
+    padding-left: 1rem;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 40rem;
+    height: 30rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 16px;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
+  #top {
+    display: none; 
+    position: fixed; 
+    bottom: 40px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: #444; 
+    color: black; 
+    cursor: pointer; 
+    padding: 7px; 
+    border-radius: 10px;
+    font-size: 18px; 
+  }
+  #search{
+    width: 50%;
+    border: black 0.1rem solid;
+}
+
+@media screen 
+  and (max-device-width: 1024px) 
+   { 
+      #d7{
+          display: none;
+      }
+      #d2{
+          display: none;
+      }
+    
+       
+    }
+
+  @media screen 
+  and (min-width: 1024px) {
+    table{
+        border: none;
+    }
+    #search{
+        height: 2rem;
+        width: 30%;
+        text-align: center;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        font-size: large;
+    }
+    #search:focus {
+        width: 50%;
+      }
+    #submit{
+         height: 2rem;
+         width: 3rem;
+    }
+    #top{
+        padding: 15px;
+    }
+    
+    body{
+        font-size: large;
+    }
+    #logo{
+        height: 7rem;
+        width: 	7rem;
+    }
+    #t{
+        font-size: x-large;
+    }
+    #email{
+        width: 15rem;
+    }
+    #d7{
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+  
+    }
+    #d6{
+        display: none;
+    }
+    #d3{
+        display: none;
+    }
+    #d2{
+        display: grid;
+        grid-template-columns: repeat(2,54rem);
+        row-gap: 5rem;
+    }
+
+    .mainnav ul{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        font-size: larger;
+        text-align: center;
+        }
+        .mainnav a{
+            max-height: 50px;
+            line-height: 50px;
+        }
+    
+    .mainnav li:hover{
+        background-color: #E4E4E4;
+    }
+    
+  }
+
+
+
+
+
